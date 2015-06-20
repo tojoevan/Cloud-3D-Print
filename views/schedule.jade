@@ -1,0 +1,38 @@
+extends layout
+//adding the schedule widget
+//todo
+//make the date picker work
+block active
+  ul.nav.nav-sidebar
+    li
+      a(href='index') About
+    li
+      a(href='instructions') Submission Instructions
+    li
+      a(href='upload') Upload
+    li.active
+      a(href='schedule') 
+        | Schedule a Scan
+        span.sr-only (current)
+    li
+      a(href='view') View Print Status
+
+block content
+  center Schedule a Scanning Session
+  br
+  h4 Please select a date and time to have an item scanned.
+  p
+    | On the date and time of your scheduled scan, bring your object to Streibel Hall.
+  br
+  .container
+    .row
+      .col-sm-6
+        .form-group
+          #datetimepicker1.input-group.date
+            input.form-control(type='text')
+            span.input-group-addon
+              span.glyphicon.glyphicon-calendar
+   script(type='text/javascript').
+     $(function () {
+     $('#datetimepicker1').datetimepicker();
+     });

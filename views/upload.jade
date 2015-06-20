@@ -1,0 +1,41 @@
+//document variables
+- var complete = #{complete}
+
+//extending the dash board layout
+extends layout
+
+//implement the side bar with upload as the active page
+block active        
+  ul.nav.nav-sidebar
+    li
+      a(href='index') About
+    li
+      a(href='instructions') Submission Instructions
+    li.active
+      a(href='upload')
+        | Upload
+        span.sr-only (current)
+    li
+      a(href='schedule') Schedule a Scan
+    li
+      a(href='view') View Print Status
+
+//implement the contents of the page
+block content
+  h1.page-header
+    center Upload
+  br
+  h4
+    i Submitting a File for Printing
+  p
+    | 1. Select and submit a compatible file in the 
+    a(href='upload') Upload
+    |  Section.
+    form(id='uploadForm' enctype='multipart/form-data' actions='/upload/process' method='post')
+      | Select a file: 
+      input(type='file', name='printFile')
+      input(type='submit', value='Upload File')
+  p
+    //run this if the post to upload was successful
+    if complete
+      Upload Successful!

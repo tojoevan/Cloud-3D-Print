@@ -1,0 +1,44 @@
+extends layout
+//set intstruction to the active page
+block active
+  ul.nav.nav-sidebar
+    li
+      a(href='index') About
+    li.active
+      a(href='instructions') 
+        | Submission Instructions
+        span.sr-only (current)
+    li
+      a(href='upload') Upload
+    li
+      a(href='schedule') Schedule a Scan
+    li
+      a(href='view') View Print Status
+ 
+//set the content
+block content
+  h1.page-header
+  center Submission Instructions
+  br
+  h4
+    i Submitting a File for Printing
+  p
+    | 1. Select and submit a compatible file in the 
+    a(href='Upload.html') Upload
+    |  Section.
+  center
+    h4 - or -
+  h4
+    i Scanning an Object for Printing
+  p
+    | Select a date and time in the 
+    a(href='Schedule.html') Schedule
+    |  Section.
+  br
+  br
+  p
+    | 2. Monitor the status of your jobs in the  
+    a(href='ViewPrintStatus.html') View Print Status
+    |  Section.
+  p
+    | 3. When your status is marked ready for pickup, as indicated by the &#10004, stop by Streibel Hall to pick up your printed project.

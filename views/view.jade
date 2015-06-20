@@ -1,0 +1,84 @@
+extends layout
+
+block active
+  ul.nav.nav-sidebar
+    li
+      a(href='index') About
+    li
+      a(href='instructions') Submission Instructions
+    li
+      a(href='upload') Upload
+    li
+      a(href='schedule') Schedule a Scan
+    li.active
+      a(href='view') 
+        | View Print Status
+        span.sr-only (current)
+        
+//Place holder for viewing print jobs
+block content
+    h1.page-header
+      center View Print Status
+    center
+      h4 View the status of your current print jobs
+      br
+    center
+      style(type='text/css').
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:16px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:16px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+        .tg .tg-7axf{font-weight:bold;font-style:italic;font-size:16px;background-color:#999999;color:#006600}
+        .tg .tg-gqh3{font-weight:bold;font-style:italic;background-color:#999999;color:#006600;text-align:center}
+        .tg .tg-3hd7{font-weight:bold;font-style:italic;font-size:16px;background-color:#999999;color:#006600;text-align:center}
+        .tg .tg-9wf5{background-color:#eeeeee}
+      table.tg
+        style(type='text/css').
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{font-family:Arial, sans-serif;font-size:14px;padding:16px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+          .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:16px 19px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+          .tg .tg-7axf{font-weight:bold;font-style:italic;font-size:16px;background-color:#999999;color:#006600}
+          .tg .tg-gqh3{font-weight:bold;font-style:italic;background-color:#999999;color:#006600;text-align:center}
+          .tg .tg-3hd7{font-weight:bold;font-style:italic;font-size:16px;background-color:#999999;color:#006600;text-align:center}
+          .tg .tg-9wf5{background-color:#eeeeee}
+        table.tg
+          tr
+            th.tg-3hd7(colspan='5')                           File Name                        
+            th.tg-7axf(colspan='3') Date Submitted
+            th.tg-7axf(colspan='2') Status
+            th.tg-gqh3(colspan='3') ETA
+          tr
+            td.tg-9wf5(colspan='5')
+            td.tg-9wf5(colspan='3')
+            td.tg-9wf5(colspan='2')
+              center &#10004
+            td.tg-9wf5(colspan='3')
+          tr
+            td.tg-9wf5(colspan='5')
+            td.tg-9wf5(colspan='3')
+            td.tg-9wf5(colspan='2')
+            td.tg-9wf5(colspan='3')
+          tr
+            td.tg-9wf5(colspan='5')
+            td.tg-9wf5(colspan='3')
+            td.tg-9wf5(colspan='2')
+            td.tg-9wf5(colspan='3')
+          tr
+            td.tg-9wf5(colspan='5')
+            td.tg-9wf5(colspan='3')
+            td.tg-9wf5(colspan='2')
+            td.tg-9wf5(colspan='3')
+          tr
+            td.tg-9wf5(colspan='5')
+            td.tg-9wf5(colspan='3')
+            td.tg-9wf5(colspan='2')
+            td.tg-9wf5(colspan='3')
+          tr
+            td.tg-9wf5(colspan='5')
+            td.tg-9wf5(colspan='3')
+            td.tg-9wf5(colspan='2')
+            td.tg-9wf5(colspan='3')
+          tr
+            td.tg-9wf5(colspan='5')
+            td.tg-9wf5(colspan='3')
+            td.tg-9wf5(colspan='2')
+            td.tg-9wf5(colspan='3')

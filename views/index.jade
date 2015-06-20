@@ -1,0 +1,28 @@
+extends layout
+
+//setting the side bar
+block active
+  ul.nav.nav-sidebar
+    li.active
+      a(href='index')
+        | About 
+        span.sr-only (current)
+    li
+      a(href='instructions') Submission Instructions
+    li
+      a(href='upload') Upload
+    li
+      a(href='schedule') Schedule a Scan
+    li
+      a(href='view') View Print Status
+
+//setting the content
+block content
+  h1.page-header
+    center Welcome to the 3D WebPrint System!
+  p
+    center Welcome to 3D WebPrint System!
+  br
+  center
+    h4 Talk about the system hereeeeeeeeeee
+            
