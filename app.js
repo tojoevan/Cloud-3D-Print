@@ -1,4 +1,4 @@
-//tools yoused
+//tools used
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -29,14 +29,14 @@ app.use(multer({
   rename: function (fieldname, filename) {
         return filename.toLowerCase()+"_"+Date.now();
   },
-   
+
   onFileUploadStart: function (file){
     console.log(file.orginalname + ' is uploading...');
   },
-  
+
   onFileUploadComplete: function (file) {
      console.log(file.fieldname + ' uploaded to: ' + file.pathn);
-  } 
+  }
 }));
 
 
